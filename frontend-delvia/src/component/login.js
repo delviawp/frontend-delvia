@@ -30,6 +30,8 @@ const Login = ({token, setToken}) => {
     return (
         <>
         <div className="login">
+            <h2>Please Login First</h2>
+            <div className="login-inputs">
             <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -44,6 +46,7 @@ const Login = ({token, setToken}) => {
             />
             {error && <small>{error}</small>}
             <button onClick={loginHandler}>Login</button>
+        </div>
         </div>
         </>
     )
